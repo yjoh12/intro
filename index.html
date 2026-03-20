@@ -135,6 +135,43 @@
       pointer-events: none; /* keep non-interactive */
       ser-select: none;
     }  
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Back to Top Button Styling */
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 100;
+      
+      /* Colors to match your theme */
+      background-color: lightgreen;
+      color: #003366; 
+      
+      /* Size and Shape */
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      
+      /* Centering the icon */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      /* Style resets */
+      text-decoration: none;
+      font-size: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    
+    #backToTop:hover {
+      background-color: #90ee90; /* A slightly different green */
+      transform: scale(1.1);
+      color: #003366; /* Keep icon color consistent */
+    }
   </style>
 </head>
 <body>
@@ -708,7 +745,7 @@
       </div>
       <div style="padding-left: 15px; border-left: 2px solid #eee;">
         <ul style="list-style-type: disc; padding-left: 20px; margin: 10px 0;">
-          <li>2026.05-06(예정) 연세대학교 의과대학, 예과</li>  
+          <li>2026.05-06 (예정) 연세대학교 의과대학, 예과</li>  
       </div>     
      </li>
 
@@ -719,10 +756,10 @@
       </div>
       <div style="padding-left: 15px; border-left: 2px solid #eee;">
         <ul style="list-style-type: disc; padding-left: 20px; margin: 10px 0;">
-          <li>2026.05(예정) 대한의용생체공학회 춘계학술대회, 의료인공지능 세션</li>
-          <li>2026.05(예정) 고려대학교 바이오의공학부 의공학 특강</li>
-          <li>2026.05(예정) The University of Hong Kong (HKU), Medical Imaging AI Summit, Hong Kong</li>
-          <li>2026.05(예정) 한국생명정보학회, 신진연구자 학술세션</li>    
+          <li>2026.05 (예정) 대한의용생체공학회 춘계학술대회, 의료인공지능 세션</li>
+          <li>2026.05 (예정) 고려대학교 바이오의공학부 의공학 특강</li>
+          <li>2026.05 (예정) The University of Hong Kong (HKU), Medical Imaging AI Summit, Hong Kong</li>
+          <li>2026.05 (예정) 한국생명정보학회, 신진연구자 학술세션</li>    
       </div>     
      </li>
 
@@ -733,7 +770,7 @@
       </div>
       <div style="padding-left: 15px; border-left: 2px solid #eee;">
         <ul style="list-style-type: disc; padding-left: 20px; margin: 10px 0;">
-          <li>2026.06(예정) 방사선생명과학회 춘계학술대회 </li>
+          <li>2026.06 (예정) 방사선생명과학회 춘계학술대회 </li>
           <li>2026.02 강남 세브란스병원 인공지능 기술 허브 세미나</li>
       </div>     
      </li>
@@ -794,10 +831,11 @@
         </div>
       </li>
     </ul>
-    <button id="backToTop" title="Top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
   </section>
-  
+
+<button id="backToTop" title="Top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+      
 </body>
 </html>
