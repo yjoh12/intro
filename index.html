@@ -200,21 +200,13 @@
 
       .team-list li { 
         display: flex !important; 
-        flex-direction: row !important; /* 좌우 구조 유지 */
-        gap: 10px !important;           /* 좁아진 화면에 맞춰 간격 조정 */
+        flex-direction: row !important; 
+        gap: 10px !important;        
       }
-    
-      /* 이미지 영역: 고정 폭을 줄여 텍스트 공간 확보 */
       .team-list li > div:first-child { 
-        flex: 0 0 120px !important;     /* 이미지 영역 폭 고정 (120px 권장) */
+        flex: 0 0 120px !important;   
         width: 120px !important;
         max-width: 120px !important;
-      }
-    
-      /* 텍스트 영역: 남은 공간 모두 차지 */
-      .team-list li > div:last-child { 
-        flex: 1 !important; 
-        padding-left: 10px !important;  /* 모바일용 패딩 축소 */
       }
     }
   </style>
