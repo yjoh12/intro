@@ -158,6 +158,11 @@ a { color: #003366; }
   pointer-events: none; /* keep non-interactive */
   user-select: none;
 }  
+.contact-info {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  color: lightgreen;
+}
 html {
   scroll-behavior: smooth;
 }
