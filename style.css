@@ -524,5 +524,14 @@ html {
     display: inline-block;
     padding: 2px 0;                
   }
+
+  .member-profile .member-contacts i.fas {
+    display: none !important;
+  }
+  
+  .member-profile .member-contacts div {
+    margin-left: 0;
+    padding-left: 0;
+  }
 }
 }
