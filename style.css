@@ -513,7 +513,7 @@ html {
   .member-profile .contact-links {
     display: flex;                 
     flex-wrap: wrap;               
-    gap: 4px;                     
+    gap: 2px;                     
     font-size: 0.7rem;           
   }
 
@@ -522,7 +522,7 @@ html {
   }
   .member-profile .contact-links a {
     display: inline-block;
-    padding: 2px 0;                
+    padding: 1px 0;                
   }
 
   .member-profile .member-contacts i.fas {
