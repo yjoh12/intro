@@ -503,4 +503,26 @@ html {
     color: #999;
     white-space: nowrap;        
   }
+  
+  .member-profile .member-contacts div[style*="margin-bottom"] {
+    margin-bottom: 2px !important; 
+    font-size: 0.7rem;            
+    line-height: 1.2;
+  }
+
+  .member-profile .contact-links {
+    display: flex;                 
+    flex-wrap: wrap;               
+    gap: 4px;                     
+    font-size: 0.7rem;           
+  }
+
+  .member-profile .contact-links span[style*="color: #ccc"] {
+    display: none;                
+  }
+  .member-profile .contact-links a {
+    display: inline-block;
+    padding: 2px 0;                
+  }
+}
 }
