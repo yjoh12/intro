@@ -16,6 +16,15 @@
   
   <header id="common-header"></header>  
 
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('common-header').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
+
   <section id="publications">
     <h2>Selected Publications</h2>
     <ul class="pub-list">
