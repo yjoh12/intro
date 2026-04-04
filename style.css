@@ -440,7 +440,6 @@ html {
     margin-bottom: 30px;       
   }
 
-  /* 2. 왼쪽 프로필 영역: 너비를 확실히 고정 */
   .member-profile {
     flex: 0 0 100px !important;  
     width: 100px !important;
@@ -458,6 +457,7 @@ html {
     font-size: 0.8rem;
     margin-top: 5px;
     word-break: keep-all;       
+    text-align: left;  
   }
 
   .member-details {
