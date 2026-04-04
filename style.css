@@ -340,6 +340,14 @@ html {
   margin-bottom: 5px;
 }
 
+.member-contacts {
+  display: block;
+  text-align: left;
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #555;
+}
+
 .member-details .member-contacts {
   display: flex;
   justify-content: space-between; 
@@ -360,11 +368,6 @@ html {
   text-align: right;            
   margin-left: 20px;              
   white-space: nowrap;           
-}
-
-.member-profile .member-contacts {
-  display: block;                 
-  text-align: left;
 }
 
 @media only screen and (max-width: 600px) {
