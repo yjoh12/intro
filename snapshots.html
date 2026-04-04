@@ -44,27 +44,35 @@
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
-  
-  /* --- 모바일 전용 설정 (600px 이하) --- */
+
   @media only screen and (max-width: 600px) {
     nav {
-      flex-direction: column; /* 세로 1열 */
-      align-items: center;
-      gap: 12px; /* 메뉴 버튼 사이의 간격을 넓게 설정 */
-      padding: 15px 0;
+      flex-direction: column; /* 세로 정렬 */
+      align-items: flex-start; /* 좌측 정렬로 변경하여 더 전문적인 느낌 */
+      max-width: 280px; /* 메뉴 폭 제한 */
+      margin: 1.5rem auto 0 auto; /* 중앙 배치 */
+      gap: 2px; /* 상자 사이 간격을 최소화 */
     }
   
     nav a {
-      display: block;
-      width: 85%; /* 화면 너비의 85% 차지 */
-      padding: 14px 20px; /* 위아래 패딩을 늘려 터치 영역 극대화 */
-      text-align: center;
-      background: rgba(255, 255, 255, 0.05); /* 살짝 비치는 배경색 */
-      border: 1px solid rgba(255, 255, 255, 0.2); /* 은은한 테두리 */
-      font-size: 1rem; /* 모바일에서 글자 크기 살짝 키움 */
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 8px 0; /* 위아래 간격을 줄임 */
+      font-size: 0.95rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* 얇은 구분선 */
+      background: none; /* 상자 배경 제거 */
+      border-radius: 0;
     }
-    
+    nav a i {
+      width: 25px; 
+      margin-right: 10px;
+      text-align: center;
+    }
+    nav a:last-child {
+      border-bottom: none;
+    }
+   }
     section {
       max-width: 1000px;
       margin: auto;
