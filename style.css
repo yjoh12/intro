@@ -350,25 +350,25 @@ html {
 
 .member-details .member-contacts {
   display: flex;
-  justify-content: space-between; 
-  align-items: baseline;          
-  width: 100%;                   
-  margin-bottom: 5px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;       /* 살짝 안으로 들여쓰기 효과 */
+  background-color: #f9f9f9; /* 아주 연한 배경색을 깔아 영역 분리 */
+  border-radius: 4px;     /* 부드러운 느낌 */
 }
 
 .member-details .role {
-  color: #333;
-  flex: 1;                        
-  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;            /* 직함은 다시 조금 진하게 */
 }
 
 .member-details .duration {
-  color: #666;
-  font-size: 0.9em;
-  text-align: right;            
-  margin-left: 20px;              
-  white-space: nowrap;           
+  font-size: 0.85rem;     /* 연도는 가장 작게 */
+  color: #888;            /* 가장 흐리게 */
+  font-style: italic;     /* 이탈릭체로 포인트 */
 }
+
 
 @media only screen and (max-width: 600px) {
   .member-details .member-contacts {
@@ -414,17 +414,19 @@ html {
 }
 
 .inst-name {
-  display: block;        
-  font-size: 1.2em;      
-  color: #222;           
-  margin-bottom: 4px;    
-  font-weight: 700;      
+  display: block;
+  font-size: 1.15rem;     /* 크기를 키워서 가장 먼저 보이게 함 */
+  font-weight: 800;       /* 아주 두껍게 */
+  color: #1a1a1a;         /* 완전한 검정에 가까운 색 */
+  margin-bottom: 2px;     /* 부서명과 바짝 붙여서 세트처럼 보이게 함 */
+  line-height: 1.3;
 }
-
 .dept-name {
-  font-size: 1.1em;
-  color: #444;
-  margin-bottom: 4px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;       /* 중간 두께 */
+  color: #555;            /* 약간 흐린 회색으로 대비를 줌 */
+  margin-bottom: 10px;    /* 아래 직함(Role)과는 간격을 두어 영역 구분 */
 }
 
 @media only screen and (max-width: 600px) {
