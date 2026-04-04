@@ -470,14 +470,14 @@ html {
   }
 
   .inst-name {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     line-height: 1.2;
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
   }
 
   .dept-name {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     color: #666;
     margin-bottom: 8px;
     line-height: 1.3;
@@ -493,13 +493,13 @@ html {
   }
 
   .member-details .role {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     flex: 1;
     padding-right: 5px;
   }
 
   .member-details .duration {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: #999;
     white-space: nowrap;        
   }
