@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snapshots | OMAEL</title>
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <title>OMAEL | Yonsei University </title>
-  <link rel="stylesheet" href="style.css"> 
-  <div id="top"></div>
-  
-</head>
-  
+  <link rel="stylesheet" href="style.css"> </head>
 <body>
   
-  <header id="common-header"></header>  
+  <div id="top"></div>
 
+  <header id="common-header"></header>
 
-<script>
+  <section>
+    <h2>Memorable Moments</h2>
+    <div class="snapshot-grid">
+
+      <div class="snapshot-item">
+        <img src="images/ys.jpg" alt="Lab snapshot">
+        <div class="snapshot-info">
+          <span class="snapshot-date">2026</span>
+          <h3>Looking Forward</h3>
+          <p>Excited to capture our very first OMAEL group photo. The journey begins here!</p>
+        </div>
+      </div>
+
+      <div class="snapshot-item">
+        <img src="images/snapshots/snmmi.JPG" alt="SNMMI 2025">
+        <div class="snapshot-info">
+          <span class="snapshot-date">JUN 2025</span>
+          <h3>Young Investigator Award</h3>
+          <p>Celebrating our Young Investigator Award at SNMMI alongside Prof. Quanzheng Li and Prof. Yujin Oh.</p>
+        </div>
+      </div>
+      
+      <div class="snapshot-item">
+        <img src="images/oncosoft.JPG" alt="Oncosoft 2024">
+        <div class="snapshot-info">
+          <span class="snapshot-date">OCT 2024</span>
+          <h3>Nature Communications</h3>
+          <p>Visiting Oncosoft to celebrate our first Nature Communications publication with Prof. Sangjoon Park, Prof. Yujin Oh, and Prof. Jin Sung Kim.</p>
+        </div>
+      </div>
+
+    </div> </section>
+
+  <a href="#top" id="backToTop" title="Go to top">
+    <div class="triangle-up"></div>
+    <i class="fas fa-home home-icon"></i>
+  </a>
+
+  <script>
     fetch('header.html')
       .then(response => response.text())
       .then(data => {
@@ -26,40 +60,5 @@
       .catch(error => console.error('Error loading header:', error));
   </script>
 
-<section>
-  <h2>Memorable Moments</h2>
-  <div class="snapshot-grid">
-
-     <div class="snapshot-item">
-      <img src="images/ys.jpg" alt="Lab snapshot">
-      <div class="snapshot-info">
-        <h3>2026</h3>
-        <p>Looking forward to capturing our first OMAEL moments.</p>
-      </div>
-    </div>
-
-     <div class="snapshot-item">
-      <img src="images/snapshots/snmmi.JPG" alt="SNMMI 2025">
-      <div class="snapshot-info">
-        <h3>June 2025</h3>
-        <p>Celebrating our Young Investigator Award at SNMMI alongside Prof. Quanzheng Li and Prof. Yujin Oh.</p>
-      </div>
-    </div>
-    
-    <div class="snapshot-item">
-      <img src="images/oncosoft.JPG" alt="Oncosoft 2024">
-      <div class="snapshot-info">
-        <h3>Oct 2024</h3>
-        <p>Visiting Oncosoft for celebrating our first Nature Communications publication with Prof. Sangjoon Park, Prof. Yujin Oh, and Prof. Jin Sung Kim.</p>
-      </div>
-    </div>
-
-    </div>
-</section>
-    
-  </section>
-
-  <a href="#top" id="backToTop" title="Go to top">
-    <div class="triangle-up"></div>
-    <i class="fas fa-home home-icon"></i>
-  </a>
+</body>
+</html>
