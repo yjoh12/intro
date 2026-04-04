@@ -430,20 +430,60 @@ html {
 }
 
 @media only screen and (max-width: 600px) {
+  /* 1. 전체 배치: 가로 정렬(row) 유지 및 간격 축소 */
   .team-member {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;      /* 사진-경력 가로 배치 유지 */
+    gap: 12px;                /* 간격 좁힘 */
+    align-items: flex-start;
   }
+
+  /* 2. 사진 영역: 크기를 더 작게 조정 */
   .member-profile {
-    max-width: 150px;
+    flex: 0 0 85px;           /* 사진 너비를 85px로 고정 */
+    max-width: 85px;
     margin: 0;
   }
+  
+  .member-profile .member-name {
+    font-size: 0.85rem;       /* 이름 크기 축소 */
+  }
+
+  .member-profile .member-contacts {
+    font-size: 0.75rem;       /* 연락처 크기 축소 */
+  }
+
+  /* 3. 경력 상세 영역: 경계선 제거 및 폰트 축소 */
   .member-details {
-    padding-left: 0;
-    border-left: none;
-    border-top: 2px solid #eee;
-    padding-top: 15px;
-    width: 100%;
+    padding-left: 10px;       /* 최소한의 여백 */
+    border-left: 1px solid #eee; /* 얇은 선으로 구분만 유지 */
+    border-top: none;         /* 위쪽 선 제거 */
+    padding-top: 0;
+    flex: 1;                  /* 남은 공간 모두 차지 */
+  }
+
+  /* 4. 경력 텍스트 크기 일괄 축소 */
+  .inst-name {
+    font-size: 0.95rem;       /* 기관명 축소 */
+    margin-bottom: 2px;
+  }
+
+  .dept-name {
+    font-size: 0.85rem;       /* 부서명 축소 */
+    margin-bottom: 6px;
+  }
+
+  .member-details .member-contacts {
+    padding: 2px 4px;         /* 안쪽 여백 축소 */
+    flex-direction: row;      /* 모바일에서도 양옆 배치 유지 시도 */
+    justify-content: space-between;
+  }
+
+  .member-details .role {
+    font-size: 0.8rem;        /* 직함 축소 */
+  }
+
+  .member-details .duration {
+    font-size: 0.75rem;       /* 연도 축소 */
+    margin-left: 8px;
   }
 }
-
