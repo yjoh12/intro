@@ -369,6 +369,13 @@ html {
   margin-left: 20px;              
   white-space: nowrap;           
 }
+.inst-name {
+  display: block;        
+  font-size: 1.1em;      
+  color: #222;           
+  margin-bottom: 4px;    
+  font-weight: 700;      
+}
 
 @media only screen and (max-width: 600px) {
   .member-details .member-contacts {
