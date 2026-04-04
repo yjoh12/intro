@@ -16,7 +16,15 @@
   
   <header id="common-header"></header>  
   
-
+<script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('common-header').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
+  
 <section id="news">
   <h2>News</h2>
   <ul style="list-style-type: none; padding-left: 0;">
