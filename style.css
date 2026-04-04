@@ -352,21 +352,21 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 8px;       /* 살짝 안으로 들여쓰기 효과 */
-  background-color: #f9f9f9; /* 아주 연한 배경색을 깔아 영역 분리 */
-  border-radius: 4px;     /* 부드러운 느낌 */
+  padding: 4px 8px;       
+  background-color: #f9f9f9; 
+  border-radius: 4px;     
 }
 
 .member-details .role {
   font-size: 0.95rem;
-  font-weight: 600;
-  color: #333;            /* 직함은 다시 조금 진하게 */
+  font-weight: 300;
+  color: #333;           
 }
 
 .member-details .duration {
-  font-size: 0.85rem;     /* 연도는 가장 작게 */
-  color: #888;            /* 가장 흐리게 */
-  font-style: italic;     /* 이탈릭체로 포인트 */
+  font-size: 0.85rem;    
+  color: #888;            
+  font-style: italic;   
 }
 
 
@@ -415,75 +415,70 @@ html {
 
 .inst-name {
   display: block;
-  font-size: 1.15rem;     /* 크기를 키워서 가장 먼저 보이게 함 */
-  font-weight: 800;       /* 아주 두껍게 */
-  color: #1a1a1a;         /* 완전한 검정에 가까운 색 */
-  margin-bottom: 2px;     /* 부서명과 바짝 붙여서 세트처럼 보이게 함 */
+  font-size: 1.15rem;     
+  font-weight: 800;       
+  color: #1a1a1a;         
+  margin-bottom: 2px;    
   line-height: 1.3;
 }
 .dept-name {
   display: block;
   font-size: 1rem;
-  font-weight: 500;       /* 중간 두께 */
-  color: #555;            /* 약간 흐린 회색으로 대비를 줌 */
-  margin-bottom: 10px;    /* 아래 직함(Role)과는 간격을 두어 영역 구분 */
+  font-weight: 500;      
+  color: #555;            
+  margin-bottom: 10px;   
 }
 
 @media only screen and (max-width: 600px) {
-  /* 1. 전체 배치: 가로 정렬(row) 유지 및 간격 축소 */
   .team-member {
-    flex-direction: row;      /* 사진-경력 가로 배치 유지 */
-    gap: 12px;                /* 간격 좁힘 */
+    flex-direction: row;     
+    gap: 12px;                
     align-items: flex-start;
   }
 
-  /* 2. 사진 영역: 크기를 더 작게 조정 */
   .member-profile {
-    flex: 0 0 85px;           /* 사진 너비를 85px로 고정 */
+    flex: 0 0 85px;          
     max-width: 85px;
     margin: 0;
   }
   
   .member-profile .member-name {
-    font-size: 0.85rem;       /* 이름 크기 축소 */
+    font-size: 0.85rem;       
   }
 
   .member-profile .member-contacts {
-    font-size: 0.75rem;       /* 연락처 크기 축소 */
+    font-size: 0.75rem;       
   }
 
-  /* 3. 경력 상세 영역: 경계선 제거 및 폰트 축소 */
   .member-details {
-    padding-left: 10px;       /* 최소한의 여백 */
-    border-left: 1px solid #eee; /* 얇은 선으로 구분만 유지 */
-    border-top: none;         /* 위쪽 선 제거 */
+    padding-left: 10px;       
+    border-left: 1px solid #eee; 
+    border-top: none;         
     padding-top: 0;
-    flex: 1;                  /* 남은 공간 모두 차지 */
+    flex: 1;                 
   }
 
-  /* 4. 경력 텍스트 크기 일괄 축소 */
   .inst-name {
-    font-size: 0.95rem;       /* 기관명 축소 */
+    font-size: 0.95rem;      
     margin-bottom: 2px;
   }
-
   .dept-name {
-    font-size: 0.85rem;       /* 부서명 축소 */
+    font-size: 0.85rem;      
     margin-bottom: 6px;
   }
 
   .member-details .member-contacts {
-    padding: 2px 4px;         /* 안쪽 여백 축소 */
-    flex-direction: row;      /* 모바일에서도 양옆 배치 유지 시도 */
+    padding: 2px 4px;         
+    flex-direction: row;      
     justify-content: space-between;
   }
 
   .member-details .role {
-    font-size: 0.8rem;        /* 직함 축소 */
+    font-size: 0.8rem;       
   }
 
   .member-details .duration {
-    font-size: 0.75rem;       /* 연도 축소 */
+    font-size: 0.75rem;      
     margin-left: 8px;
   }
 }
