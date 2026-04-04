@@ -16,6 +16,16 @@
   
   <header id="common-header"></header>  
 
+
+<script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('common-header').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
+
 <section>
   <h2>Memorable Moments</h2>
   <div class="snapshot-grid">
