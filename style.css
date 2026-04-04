@@ -238,6 +238,17 @@ html {
     gap: 30px;
   }
 
+  @media (max-width: 600px) {
+    .snapshot-grid {
+      grid-template-columns: 1fr;
+      gap: 20px; 
+    }
+  
+    .snapshot-item img {
+      height: 200px; 
+    }
+  }
+
   .snapshot-item {
     background: #fff;
     border-radius: 12px;
@@ -281,3 +292,4 @@ html {
     color: #666;
     line-height: 1.5;
   }
+
