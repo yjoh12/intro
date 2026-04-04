@@ -349,7 +349,6 @@ html {
 }
 
 .member-details .role {
-  font-weight: bold;
   color: #333;
   flex: 1;                        
   text-align: left;
@@ -367,6 +366,7 @@ html {
   display: block;                 
   text-align: left;
 }
+
 @media only screen and (max-width: 600px) {
   .member-details .member-contacts {
     flex-direction: column;   
