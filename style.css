@@ -31,35 +31,31 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+/* --- 모바일 전용 설정 (600px 이하) --- */
 @media only screen and (max-width: 600px) {
   nav {
-    flex-direction: column; 
-    align-items: flex-start;
-    max-width: 280px;
-    margin: 0 auto 0 auto;
-    gap: 3px; 
+    display: flex;          
+    flex-direction: row;    
+    flex-wrap: wrap;        
+    justify-content: center; 
+    max-width: 100%;        
+    gap: 15px 20px;        
+    padding: 10px;
   }
 
   nav a {
-    display: flex;
+    display: inline-flex;  
     align-items: center;
-    width: 100%;
-    
-    padding: 10px 0; 
-    
-    font-size: 0.95rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    transition: background 0.2s;
-  }
-
-  nav a:active {
-    background: rgba(255, 255, 255, 0.05);
+    width: auto;            
+    padding: 8px 5px;      
+    font-size: 0.9rem;      
+    border-bottom: none;    
+    white-space: nowrap;    
   }
 
   nav a i {
-    width: 30px; 
-    margin-right: 12px;
-    text-align: center;
+    width: auto;            
+    margin-right: 6px;     
   }
 }
 section {
