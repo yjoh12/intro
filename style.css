@@ -137,7 +137,7 @@ a { color: #003366; }
 .pub-meta {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9em;
+  font-size: 1em;
   color: #999;
 }
 .pub-meta .duration {
