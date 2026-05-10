@@ -130,6 +130,11 @@ a { color: #003366; }
   font-size: 1em;
   margin-bottom: 4px;
 }
+.authors {
+  font-size: 0.9em;
+  margin-bottom: 4px;
+  color: #888;
+}
 .pub-meta {
   display: flex;
   justify-content: space-between;
