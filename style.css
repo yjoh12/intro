@@ -127,17 +127,17 @@ a { color: #003366; }
   white-space: nowrap; /* prevent line break */
 }
 .pub-title {
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 3px;
 }
 .authors {
-  font-size: 1em;
-  margin-bottom: 3px;
+  font-size: 0.9em;
+  margin-bottom: 4px;
 }
 .pub-meta {
   display: flex;
   justify-content: space-between;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 .pub-meta .role {
   font-style: italic
