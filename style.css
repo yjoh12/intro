@@ -128,11 +128,11 @@ a { color: #003366; }
 }
 .pub-title {
   font-size: 1.1em;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 .authors {
   font-size: 1em;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 .pub-meta {
   display: flex;
