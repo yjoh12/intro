@@ -127,12 +127,12 @@ a { color: #003366; }
   white-space: nowrap; /* prevent line break */
 }
 .pub-title {
-  font-size: 1em;
+  font-size: 1.1em;
   margin-bottom: 4px;
 }
 .authors {
   font-size: 0.9em;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   color: #888;
 }
 .pub-meta {
