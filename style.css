@@ -138,7 +138,8 @@ a { color: #003366; }
   display: flex;
   justify-content: space-between;
   font-size: 1em;
-  color: #999;
+  /* color: #999; */
+  font-style: italic;
 }
 .pub-meta .duration {
   white-space: nowrap;
