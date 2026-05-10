@@ -139,7 +139,10 @@ a { color: #003366; }
   justify-content: space-between;
   font-size: 1em;
   /* color: #999; */
-  font-style: italic;
+  /* font-style: italic; */
+}
+.pub-meta .role {
+  font-style: italic
 }
 .pub-meta .duration {
   white-space: nowrap;
