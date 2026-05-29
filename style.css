@@ -708,8 +708,8 @@ html {
     overflow-wrap: anywhere;
     word-break: break-word;
   }
-  .team-member.pi-compact .inst-name { font-size: 0.72rem; }
-  .team-member.pi-compact .dept-name { font-size: 0.65rem; }
-  .team-member.pi-compact .member-details .role { font-size: 0.62rem; }
-  .team-member.pi-compact .member-details .duration { font-size: 0.62rem; }
+  .team-member.pi-compact .inst-name { font-size: 0.85rem; }
+  .team-member.pi-compact .dept-name { font-size: 0.70rem; }
+  .team-member.pi-compact .member-details .role { font-size: 0.65rem; }
+  .team-member.pi-compact .member-details .duration { font-size: 0.65rem; }
 }
