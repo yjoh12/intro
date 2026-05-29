@@ -678,11 +678,34 @@ html {
 .team-member.pi-compact .member-details .duration { font-size: 0.78rem; }
 
 @media only screen and (max-width: 600px) {
-  .team-member.pi-compact .member-photo {
-    width: 100% !important;
-    max-width: 100px !important;
-    height: auto !important;
-    max-height: 140px;
+  /* PI section: cap photo to the mobile profile column so it can't overflow */
+  .team-member.pi-compact {
+    flex-wrap: nowrap;
+    overflow: hidden;
   }
-  .team-member.pi-compact .member-profile { max-width: 100px !important; }
+  .team-member.pi-compact .member-profile {
+    flex: 0 0 90px !important;
+    width: 90px !important;
+    max-width: 90px !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+  }
+  .team-member.pi-compact .member-photo {
+    width: 90px !important;
+    max-width: 90px !important;
+    height: auto !important;
+    max-height: 130px;
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+  .team-member.pi-compact .member-details {
+    min-width: 0 !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .team-member.pi-compact .inst-name,
+  .team-member.pi-compact .dept-name {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
 }
