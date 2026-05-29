@@ -661,11 +661,13 @@ html {
 .team-member.pi-compact { gap: 18px; margin-bottom: 28px; }
 .team-member.pi-compact .member-profile { max-width: 160px; }
 .team-member.pi-compact .member-photo {
-  width: 140px !important;
-  height: 190px !important;
-  object-fit: cover;
+  width: 150px !important;
+  height: auto !important;
+  max-height: 240px;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 10px;
+  display: block;
 }
 .team-member.pi-compact .member-details { padding-left: 18px; }
 .team-member.pi-compact .details-item { margin-bottom: 12px; }
