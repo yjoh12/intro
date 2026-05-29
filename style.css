@@ -676,3 +676,13 @@ html {
 .team-member.pi-compact .member-details .member-contacts { padding: 2px 6px; }
 .team-member.pi-compact .member-details .role { font-size: 0.85rem; }
 .team-member.pi-compact .member-details .duration { font-size: 0.78rem; }
+
+@media only screen and (max-width: 600px) {
+  .team-member.pi-compact .member-photo {
+    width: 100% !important;
+    max-width: 100px !important;
+    height: auto !important;
+    max-height: 140px;
+  }
+  .team-member.pi-compact .member-profile { max-width: 100px !important; }
+}
