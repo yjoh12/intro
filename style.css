@@ -146,6 +146,18 @@ a { color: #003366; }
   white-space: nowrap;
   margin-left: 12px;
 }
+ol.pub-list {
+  list-style: decimal;
+  padding-left: 2.2rem;
+  margin: 0;
+}
+ol.pub-list > li {
+  padding-left: 0.3rem;
+}
+ol.pub-list > li::marker {
+  color: #003366;
+  font-weight: bold;
+}
 /* ---------- Add figure-row styles here ---------- */
 .figure-row {
   display: flex;
