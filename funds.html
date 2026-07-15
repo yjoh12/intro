@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Funds & Projects | OMAEL | Yonsei University </title>
+  <link rel="stylesheet" href="style.css">
+  <div id="top"></div>
+
+</head>
+
+<body>
+
+  <header id="common-header"></header>
+
+<script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('common-header').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
+
+  <section id="funds">
+    <h2>Funds & Projects</h2>
+    <ul class="pub-list">
+
+       <li>
+        <div class="pub-title">
+          <b> 견고한 공학 이론 기반 고난도 임상 의사 결정을 위한 해석가능한 의료 인공지능 학습 기법 개발 </b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">한국연구재단, 개인기초연구, 우수연구-신진연구(유형B), 총 6억 원/4년, 연구책임자</span>
+          <span class="duration">2026.03 – Current</span>
+        </div>
+      </li>
+
+       <li>
+        <div class="pub-title">
+          <b>임상 난제 해결을 위한 해석가능한 멀티모달 의료 인공지능 학습법 개발: 난치암, 희귀암, 다학제 의사 결정 </b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">연세대학교 의과대학, 총 2억 원/2년, 연구책임자</span>
+          <span class="duration">2026.03 – Current</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <b>병원 간 데이터 이질성 극복을 위한 전문가 혼합 분산 학습 기반 분포 강건 의료 인공지능 기술 개발 </b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">연세대학교 의과대학, 연구책임자</span>
+          <span class="duration">2026.04 – Current</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <b>Cancer Treatment Optimization based on Treatment-Response centered Integration of Clinical-Bio Bigdata and Multimodal AI</b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">National Research Foundation (NRF) of Korea, Co-Investigator</span>
+          <span class="duration">2026.01 – Current</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <b>LLM-driven Multi-Agent Framework for Multidisciplinary Tumor Board Treatment Recommendation</b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">Harvard Medical School & MGH, MA, USA, Co-Investigator</span>
+          <span class="duration">2025 – 2026  </span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <b>Developing a PET/CT Foundation Model for Cross-Modal Anatomical and Functional Imaging</b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">Harvard Medical School & MGH, MA, USA, University of Bern, Switzerland, Co-Investigator</span>
+          <span class="duration">2025 – 2026  </span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <b>Unsupervised Learning-based Advanced Cognitive Framework of AI for Development of Interpretable Medical Diagnostic System</b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">Sejong Science Fellowship (Overseas Track), National Research Foundation (NRF) of Korea, ~50K USD, Principal Investigator</span>
+          <span class="duration">2024 – 2025</span>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <a href="#top" id="backToTop" title="Go to top">
+    <div class="triangle-up"></div>
+    <i class="fas fa-home home-icon"></i>
+  </a>
+
+</body>
+</html>

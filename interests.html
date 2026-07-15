@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Research Interests | OMAEL | Yonsei University </title>
+  <link rel="stylesheet" href="style.css">
+  <div id="top"></div>
+
+</head>
+
+<body>
+
+  <header id="common-header"></header>
+
+<script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('common-header').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
+
+  <section id="interests">
+    <h2>Research Interests</h2>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+    <li>
+        <b>Generalizable AI for Medical Image Analysis</b>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; margin-bottom: 20px;">
+          <img src="images/GenAI.png" alt="Generalizable AI" alt="Figure" oncontextmenu="return false;" draggable="false" style="pointer-events: none; width: 100%; max-width: 1000px; height: auto;">
+        </div>
+    </li>
+    <li>
+        <b>From Theory to Practical AI for Real-World Data Adaptation</b>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; margin-bottom: 20px;">
+          <img src="images/TheoryAI.png" alt="Generalizable AI" alt="Figure" oncontextmenu="return false;" draggable="false" style="pointer-events: none; width: 100%; max-width: 1000px; height: auto;">
+        </div>
+    </li>
+    <li>
+      <b>Multimodal and Agentic AI for Oncology Treatment Planning Support</b>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; margin-bottom: 20px">
+        <img src="images/mm.png" alt="Multimodal AI" alt="Figure" oncontextmenu="return false;" draggable="false" style="pointer-events: none; width: 100%; max-width: 1000px; height: auto;">
+      </div>
+    </li>
+    </ul>
+  </section>
+
+  <a href="#top" id="backToTop" title="Go to top">
+    <div class="triangle-up"></div>
+    <i class="fas fa-home home-icon"></i>
+  </a>
+
+</body>
+</html>
