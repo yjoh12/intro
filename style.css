@@ -725,3 +725,9 @@ html {
   .team-member.pi-compact .member-details .role { font-size: 0.65rem; }
   .team-member.pi-compact .member-details .duration { font-size: 0.65rem; }
 }
+
+/* Featured snapshot: occupies 4 regular grid cells (2 × 2) */
+.snapshot-item.featured {
+  grid-column: span 2;
+  grid-row: span 2;
+}
