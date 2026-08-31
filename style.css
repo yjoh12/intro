@@ -730,4 +730,15 @@ html {
 .snapshot-item.featured {
   grid-column: span 3;
   grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+}
+.snapshot-item.featured img {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  object-fit: cover;
+}
+.snapshot-item.featured .snapshot-info {
+  flex: 0 0 auto;
 }
