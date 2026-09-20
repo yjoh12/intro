@@ -290,7 +290,7 @@ html {
 
 .member-photo {
   width: 100%;
-  aspect-ratio: 1 / 1;   /* 정사각형으로 고정 (원하는 비율로 조정 가능, 예: 3/4) */
+  aspect-ratio: 3 / 4;  
   height: auto;
   border-radius: 4px;
   display: block;
