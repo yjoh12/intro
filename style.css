@@ -536,9 +536,9 @@ html {
 }
 .team-card .member-photo {
   width: 90px !important;
-  height: 120px !important;
+  height: 125px !important;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 8px;
   margin: 0 !important;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   grid-row: span 2;
