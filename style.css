@@ -222,6 +222,12 @@ html {
 .home-icon {
   font-size: 18px;
 }
+#lecture > ul > li > div:last-child {
+  flex: 1;
+  min-width: 0;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
 
 /* Mobile Adjustments */
   @media only screen and (max-width: 600px) {
