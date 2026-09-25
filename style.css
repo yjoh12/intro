@@ -222,13 +222,32 @@ html {
 .home-icon {
   font-size: 18px;
 }
-#lecture > ul > li > div:last-child {
+#lecture > ul.lecture-list > li.lecture-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+#lecture .lecture-title {
+  flex: 0 0 300px;
+  font-weight: bold;
+  color: #555;
+}
+#lecture .lecture-details {
   flex: 1;
   min-width: 0;
+  padding-left: 15px;
+  border-left: 2px solid #eee;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
-
+@media (max-width: 700px) {
+  #lecture > ul.lecture-list > li.lecture-row {
+    display: block;
+  }
+  #lecture .lecture-title {
+    margin-bottom: 8px;
+  }
+}
 /* Mobile Adjustments */
   @media only screen and (max-width: 600px) {
     #backToTop {
