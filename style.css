@@ -788,3 +788,40 @@ html {
     padding: 16px;
   }
 }
+
+.alumni-section summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    list-style: none;
+}
+
+.alumni-section summary::-webkit-details-marker {
+    display: none;
+}
+
+.alumni-section summary h2 {
+    margin: 0;
+    flex: 1;
+}
+
+.alumni-section summary::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+    margin-right: 8px;
+}
+
+.alumni-section[open] summary::after {
+    transform: rotate(225deg);
+}
+
+.alumni-section .team-list {
+    margin-top: 20px;
+}
+
