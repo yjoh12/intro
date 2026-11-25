@@ -792,9 +792,10 @@ html {
 .alumni-section summary {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 12px;
     cursor: pointer;
     list-style: none;
+    width: fit-content;
 }
 
 .alumni-section summary::-webkit-details-marker {
@@ -803,25 +804,33 @@ html {
 
 .alumni-section summary h2 {
     margin: 0;
-    flex: 1;
 }
 
 .alumni-section summary::after {
-    content: "";
-    width: 9px;
-    height: 9px;
-    border-right: 2px solid currentColor;
-    border-bottom: 2px solid currentColor;
-    transform: rotate(45deg);
-    transition: transform 0.2s ease;
-    margin-right: 8px;
+    content: "+";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #a0a0a0;
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: 400;
+    color: #888;
+    transition: all 0.2s ease;
 }
 
 .alumni-section[open] summary::after {
-    transform: rotate(225deg);
+    content: "−";
+}
+
+.alumni-section summary:hover::after {
+    background: #f0f0f0;
+    color: #333;
+    border-color: #555;
 }
 
 .alumni-section .team-list {
     margin-top: 20px;
 }
-
